@@ -14,27 +14,23 @@ The Troubleshooting Cycle
 ---
 flowchart TB
  report[Initial Issue Report]
- validate{"Validate\n---\n Do you see the issue as reported?"}
+ validate{"Validate\n---\n Do you see the issue as reported?\nOr new issue resulting from your fix?"}
  reproduce{"Reproduce\n---\nCan you show the issue at will"}
  isolate["Isolate\n---\nUse logs, source code, network traffic or anything else\nto build an understanding of a likely cause for the issue"]
  resolve["Resolve\n---\ntest *one*, ideally small, change to fix the issue"]
- cleanup[Make sure didn't create any new issues and have documented your resolution]
+ document["Document\n---\nDocument the issue from report through resolution, including possible options for preventative actions"]
  done[Issue Resolved]
 
  report-->validate
 
  validate-. Sometimes reports need cleared up .->report
  validate-- Yes -->reproduce
- validate-- No -->done
+ validate---- No ---->done
 
  reproduce-- No -->reproduce
  reproduce-- Yes -->isolate
 
- isolate-->resolve
-
- resolve-- The change fixed the issue -->cleanup
- cleanup--> resolve
- cleanup-->done
+ isolate-->resolve-->document-->validate
 ```
 
 ### Initail Issue Report
