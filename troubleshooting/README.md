@@ -13,24 +13,25 @@ steps to validate.
 The Troubleshooting Cycle
 ---
 flowchart TB
- report[Initial Issue Report]
- validate{"Validate\n---\n Do you see the issue as reported?\nOr new issue resulting from your fix?"}
- reproduce{"Reproduce\n---\nCan you show the issue at will"}
+ report("Report\n---\nInitial issue report")
+ validate{"Validate\n---\n Do you see the issue as reported?\nIs the issue partially resolved?\nAny new issue resulting from your fix?"}
+ reproduce{"Reproduce\n---\nCan you show the issue at will?"}
  isolate["Isolate\n---\nUse logs, source code, network traffic or anything else\nto build an understanding of a likely cause for the issue"]
  resolve["Resolve\n---\ntest *one*, ideally small, change to fix the issue"]
- document["Document\n---\nDocument the issue from report through resolution, including possible options for preventative actions"]
+ document1["Document\n---\nDocument the change under testing,\nWhat changed, Where, When, Why, by Whom?"]
+ document2["Document\n---\nDocument the issue from report through resolution,\nincluding possible options for preventative actions"]
  done[Issue Resolved]
 
  report-->validate
 
  validate-. Sometimes reports need cleared up .->report
  validate-- Yes -->reproduce
- validate---- No ---->done
+ validate-- No -->document2---->done
 
  reproduce-- No -->reproduce
  reproduce-- Yes -->isolate
 
- isolate-->resolve-->document-->validate
+ isolate-->resolve-->document1-->validate
 ```
 
 ### Initail Issue Report
@@ -58,4 +59,14 @@ possibly all at the same time. Alternetly they can have exactly the information
 needed in just the order and detail needed to resolve the issue, including a in
 some cases a link to the resolution procedure.
 
-### Validate the issue report and that there is a problem
+### Validate
+
+### Reproduce
+
+### Isolate
+
+### Resolve
+
+### Document
+
+### Issue Resolved
