@@ -491,7 +491,7 @@ is a simple GitLab syntax markdown viewer. [Markdown Diagrams](https://github.co
 extends markdown with the diagram support. Together they provide a solid base
 to view rendered versions of the documentation you are working on.
 
-![Local Screenshot](../assets/Screenshot-Local-Markdown-Mermaid.png?raw=true)
+![Local Screenshot](../Screenshot-Local-Markdown-Mermaid.png?raw=true)
 
 #### Plug-ins
 
@@ -507,7 +507,7 @@ tooling, ect. can benifit from diagrams with no extra effort. The following
 screenshot is from a github rendered README.md file with nothing done other
 than add the block with the language of `mermaid`.
 
-![Github Screenshot](../assets/Screenshot-Github-Markdown-Mermaid.png?raw=true)
+![Github Screenshot](../Screenshot-Github-Markdown-Mermaid.png?raw=true)
 
 ### Jira
 
