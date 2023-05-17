@@ -883,6 +883,9 @@ that we are likely to work with are users, external services, aws accounts,
 aws services, terraform modules as deployeable units of function. Another way
 to look at this would be as a single "Workload" in the AWS WAFR framework.
 
+`cmd + click` on the "Application" node will open a new tab for the
+application Container diagram.
+
 ##### Diagram
 
 Basic three tier web arch with CDN
@@ -937,7 +940,7 @@ flowchart TD
     end
 
     %% Add click action to a node
-    click web href "https://github.com/gnorton-missioncloud/technical_training_docs/tree/main/mermaid#user-content-c4-container-diagram" "Open this modules diagram" _blank
+    click web href "#user-content-c4-container-diagram" "Open this modules diagram" _blank
 ```
 
 ##### Text
