@@ -937,7 +937,7 @@ flowchart TD
     end
 
     %% Add click action to a node
-    click web href "https://github.com/gnorton-missioncloud/technical_training_docs/tree/main/mermaid#user-content-c4-container-diagram" "Open this modules diagram"
+    click web href "https://github.com/gnorton-missioncloud/technical_training_docs/tree/main/mermaid#user-content-c4-container-diagram" "Open this modules diagram" _parent
 ```
 
 ##### Text
