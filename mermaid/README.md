@@ -993,6 +993,7 @@ flowchart TD
 
     %% Add click action to a node
     click web "#c4-container-diagram" "Open this modules diagram" _blank
+    %% click web "#user-content-c4-container-diagram" "Open this modules diagram" _blank
 ```
 
 #### Container
