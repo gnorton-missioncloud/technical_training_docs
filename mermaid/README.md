@@ -491,7 +491,7 @@ is a simple GitLab syntax markdown viewer. [Markdown Diagrams](https://github.co
 extends markdown with the diagram support. Together they provide a solid base
 to view rendered versions of the documentation you are working on.
 
-![Local Screenshot](../assets/Screenshot-Local-Markdown-Mermaid.png?raw=true)
+![Local Screenshot](../../assets/Screenshot-Local-Markdown-Mermaid.png?raw=true)
 
 #### Plug-ins
 
