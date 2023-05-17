@@ -72,9 +72,7 @@ sequenceDiagram
     provider->>client: Client checks ID (JWT) Token contents and confirms sig
 ```
 
-#### Diagram text
-
-TODO: Look into why this block is rendering as a diagram
+#### Text
 
 ```
 sequenceDiagram
@@ -491,6 +489,12 @@ is a simple GitLab syntax markdown viewer. [Markdown Diagrams](https://github.co
 extends markdown with the diagram support. Together they provide a solid base
 to view rendered versions of the documentation you are working on.
 
+##### Note
+
+I am doing this demo in GitHub as the browser pluging is a little buggy at
+this time it is displaying some text blocks without the `mermaid` "type" as
+diagrams.
+
 ![Local Screenshot](../../assets/Screenshot-Local-Markdown-Mermaid.png?raw=true)
 
 #### Plug-ins
@@ -851,6 +855,8 @@ flowchart BT
     DOE & sDOE & CSA & sCSA---->slack
 ```
 
+[Live editor](https://mermaid.live/edit#pako:eNqtVVFP2zAQ_iuWJ02bROhotwJ9YOpKNfGAQCrSHggPrn1JrDp2ZDuwCvW_7xyXJtlUKNL6kNp3n7-7-3y2nyk3AuiEJkmSai-9ggm5A15oyZkic8elYl4a7UhCfhWGcKbJFWFuRTJjSQGq-p7qZnGmzBMvmPXkx12qCf6k9mD1p5ReNYOUfo72ErQ3Fu3XzWBnZ5c3c7ROnTOcSeaBXMLjTeXIXOdSA7TICNznddG9AC0xx32o2WKKoJkytSALo-pY5dTyQnoUwLd0EbmlO2CBnxVM3w9S-uEOWJmmelYAX5En6QuyNrUlPpjp4GFbtlKYXIOfKpW8JCp13l_KyNIaJsASaCGkMkZ1uNxq_ruKXG6V-AISnIP1Drl-GiMwmifekL9DNSEQw4hTMi-8WhMhswwsblEnxlaReplbVhWIZXx1j9qE_5Ruk9hp0E5jjZ15k2ecgxb_EMfWcYWs7l_aJ0x6IYS0wMMm7BqubbokuYhdtj9EZQRy3xrRI20Dp930saOQEr_kY2ic1hMdbufBr-sBcIKArSfC-gD3JoWLHAGxv5zQU1hP03HdgrDMbiX-9aPTQA47P3GXDz1Ekfg9J6mncSteKxBK4m8xo6ZDSCic3DYJPuxXCRQ84sWCS-Zx1G_aIF4nMLwtFhwuFrxLLPjfYiUXsFXrpvbEZK8rtp8GG7E57Zoe0RJsyaTA9-M5LEspXjglajrBoWAWr4RUbxDHam8Wa83pJGPKwRGtK4HiX0qG21LurCAkHtnr-CI1D9MLct54dkDV3IN08kz9ugrgXDqPYG50JvNgr61Cc-F95SaDQXAf53jD1ctjbsqBkyK8VMXj-XgwHo7P2HAE49MR-zYaCb48OT_Lhl9PMnH65WTI6Gaz-QMyZDXH)
+
 ### C4
 
 C4 is a diagram style inspired by UML, this was simplified and paterned on
@@ -996,6 +1002,8 @@ flowchart TD
     click web href "https://github.com/gnorton-missioncloud/technical_training_docs/tree/main/mermaid#user-content-c4-container-diagram" "Open this modules diagram" _blank
 ```
 
+[Live editor](https://mermaid.live/edit#pako:eNqNVE1v2zAM_SuCht7qekm6tM2hQLBswA7dCrRDD_UQyBJtC5UlQ5ITBEH--yjJ-eoOnQ82TT7xkY-StpQbAXRGsywrtJdewYy8QEnmXVfo6KyUWfOGWU-eF4UufO_Avhb0N34K-qfQBJ_05kJj4KvRHrQnC1ByBXZDfoJfG_uWMK8TK8gjZtuQJ7AryeEsxaM1KynAEc54I3VNmBZEDJkSxFQxyEoFhA9ciEpB5hx4966u5MTSYmMJkYp5_k4ejOhVKOJdAXERcd5YVsMJAefgHKmMDe1GohTQqUtkGfrF6j9m4aZtey0589JoothmEDXB1lBiPhyFGhD_UfYRPKSLcam56kUQ1INtpU7ZjkyCeYZUC_yUzMHHPGFBVAdOsoStkWX3QZj47_qytqxrkB5pUSGk-DGYhxkNOyf9wF7nw1K2DpObvzydLTiGOTe9DonnyTqDnQzm3ImEWCjq-6_7KrtnJ3tk_yAWV4S2j_5DtdFI5sUFmQtBOE7hDauLg_CGMKLxoA3nJMYwIWksVKSgjfedm-V5LX3Tl1e4KfJaG-uNzlrpHKbgyvQi98CbsFnU0lsmNY5zKQx3ubcAeYuevMXpMik-xUkMpyPj19HEODqFZKhcW1Dk_dUBFtdIR9o4ZhzrIbosFdOoGr2kQ1K8JbahgYL6Blqc-wxNwVBaWugd4ljvzdNGczqrmHJwSfsO9YJFynnwgpC4bx7SvROvnz3yW4wcgMowAfi7pX7TBXAtnUcwNlPJOvh7q9B9lM_5qxMNnRTh3mpWd9N8Op7esvEEpjcT9mUyEbwc3d1W4-tRJW4-j8aM7na7v8X3qQQ)
+
 #### Container
 
 This is where we get into the body of the technical implementation, this level
@@ -1093,6 +1101,8 @@ flowchart TD
 
     i1 & iN -.-> bucket["Asset Bucket"]
 ```
+
+[Live editor](https://mermaid.live/edit#pako:eNqNVVFP2zAQ_iunPExMaihtoUAfKlF1mpCAIZVpDwRVl9hJLFI7sx0Qqvrfd7bT0DLYyEuc8-fvu7O_c9ZRphiPJlEcx4m0wlZ8Ar94Chd1XYkMrVASrhVrKp5Ij8kr9ZyVqC3czRMJ9AhZN_Y-iS7d24SYh7pB3aTEszRNKrldCmbgoBLG3hurhSwevkIMV_QNKm-hEKAGrILGcMiVBltywJ2ErmYtuRZPaPnn2AP2E_QGsLEqNhlWRAKFVk0d9JhaoZD_ENkCiByzjNcW0Hr6qxm4NVxy3VKly0xJyTOnuDQ8074AOAisjnThg3DJuiQDDEpVMZeZC81n8MrjKtISV7wHNRrzrDTrATKmuTEUUtoGcZojtbTJHulVo8bVW-nFNfg4t1yDsUpzECEPvxbCWnBaSfSQyMCrGhus8MMP3nqhSpdMmqVbtCt2G859frPwfF21tGd-yI0l5I6MN1wcT1fel0QfT4PyFkBnXGisSwgISshZ-lLmGrdmdmzQPh08OJDgbUqL4JU9cCiEMBfkwt0JLtl7lMF2jrM14MektE-RRV3QxgbTUVdO0RT7uI6aZlwa5NVFa9XvYdUbYr9lA9-gxqLMOAzex9zsYm7-wuwV-Jqx5kxo8p_3F5wdgea_Gzoz3wXHxyNfRZX-b6OY29M5WkzRfLxJVLPTvHVSo9HRiSffrnpHoht0OkKSpYnb1xqGeyqhGNdMd7PX6E9qLLNVNhMqs7etbac6r9Z6dABfaEchPoynbbe4w_LNM_OfpBr1ohXXdGUwuoHXbiEZoOSupyY0ZKgfkyiRG8K5K2nxIrNokmNleC9qakZumgukslZdlM6CmvU63On-at8iv_mZDlgpZJw-15F9qR24oOuJwHSZ5KJw8UZXFC6trc2k33fTh4WwZZMeZmrVN4K5n0D5dD7uj4fjMxyO-Ph0hCejEcvSwflZPjwe5Oz0aDDEaLPZ_AGS2w3o)
 
 #### Component and Code
 
