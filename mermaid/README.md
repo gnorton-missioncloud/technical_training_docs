@@ -491,8 +491,7 @@ is a simple GitLab syntax markdown viewer. [Markdown Diagrams](https://github.co
 extends markdown with the diagram support. Together they provide a solid base
 to view rendered versions of the documentation you are working on.
 
-# TODO: fix link
-< IMAGE LINK - downloads/Screenshot-Local-Markdown-Mermaid>
+![Local Screenshot](../assets/Screenshot-Local-Markdown-Mermaid.png?raw=true)
 
 #### Plug-ins
 
@@ -508,8 +507,7 @@ tooling, ect. can benifit from diagrams with no extra effort. The following
 screenshot is from a github rendered README.md file with nothing done other
 than add the block with the language of `mermaid`.
 
-# TODO: fix link
-< IMAGE LINK - Downloads/Screenshot-Github-Markdown-Mermaid >
+![Github Screenshot](../assets/Screenshot-Github-Markdown-Mermaid.png?raw=true)
 
 ### Jira
 
@@ -533,7 +531,7 @@ like the local workflow for my documentation work when brainstorming this is
 the place to be. Live rendering of changes allows for rapid iteration of ideas
 and their representation.
 
-#### Example
+e### Example
 
 [Simple flowchart](https://mermaid.live/edit#pako:eNpVkFFvwiAUhf8K4WlL1M52q9qHJbM6X1y2ZL61fbgCLcQWCKUzpu1_H2hMNp4u53wHbk6PiaIMJ7is1ZlwMBYdNrlE7rxlKTeitQ20BZpOX4cds6hRkl0GtH7YKdRypbWQ1eONX3sIpf3eYwxZLuRpvFnpNf8p2YA22R60Vbr46xzOakDbTHxx9_x_hxvmUu9ZCUkJUwIGpWAKPMENMw0I6lbvfSDHlrOG5ThxIwVzynEuR8dBZ9X3RRKcWNOxCe40Bcs2AioDzV1kVFhlPm5VXBu5g9urg93ndevAWgFl7tpje9EerlxDDiZKlqLyemdqJ3NrdZsEgbdnlbC8O86IaoJWUF8y_1nFQRzGSwgjFi8ieIkiSo7z1bIMn-clXTzNQ8DjOP4CDjyGpw)
 
@@ -1096,11 +1094,12 @@ flowchart TD
     i1 & iN -.-> bucket["Asset Bucket"]
 ```
 
-#### Component
+#### Component and Code
 
-A major component of a container 
-May not be needed depending on the use
-Diagram
-Diagram as text
+As stated above, these are the two layers most dependent on the implementation
+and thus most likely to be out of date without very good attention to process.
+For that reason I have not demonstraited them here today but I am sure that
+you can follow the idea of zooming in on the scope to add more detail when the
+use case make it worth while.
 
 # Questions?
