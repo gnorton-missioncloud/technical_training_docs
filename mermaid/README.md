@@ -507,7 +507,7 @@ tooling, ect. can benifit from diagrams with no extra effort. The following
 screenshot is from a github rendered README.md file with nothing done other
 than add the block with the language of `mermaid`.
 
-![Github Screenshot](../assets/Screenshot-Github-Markdown-Mermaid.png?raw=true)
+![Github Screenshot](../../assets/Screenshot-Github-Markdown-Mermaid.png?raw=true)
 
 ### Jira
 
