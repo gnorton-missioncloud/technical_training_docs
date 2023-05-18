@@ -5,9 +5,9 @@ Scroll through each of the following
 
 ## Chart types
 
-Mermaid support a good selection of diagrams and chart. It also has a modular
-structrue that allows for expanson of the collection and interested users to
-provide there own additions. The current list of diagrams and charts is:
+Mermaid supports a good selection of diagrams and charts. It also has a modular
+structure that allows for expansion of the collection and interested users to
+provide their own additions. The current list of diagrams and charts is:
 
 - Flowchart
 - Sequence diagram
@@ -24,7 +24,7 @@ We will briefly review each of these with visual and code examples.
 
 ### Flowchart
 
-This is one of the most common types of diagram due to it's veratility, if
+This is one of the most common types of diagram due to it's versatility, if
 you need to diagram something other that the specific types provided you will
 likely use a `flowchart` type diagram. We will show a simple example here as
 this is one of the types we will use more later on.
@@ -91,7 +91,7 @@ sequenceDiagram
 
 ### Gantt chart
 
-Gantt charts are similar to the bar charts you ware likely used to but the
+Gantt charts are similar to the bar charts you were likely used to but the
 bars don't all start at the same place, they are normally used for visualizing
 project timing.
 
@@ -131,7 +131,7 @@ Class diagrams (UML), primarily used in software development to show class
 relationships and capabilities. They can also be used for ad-hoc work such
 as emulating [Class Responsibility Collaboration (CRC)](https://en.wikipedia.org/wiki/Class-responsibility-collaboration_card)
 cards and terraform module modeling. The following is a rough outline of an
-ecs web application module with sub modules for VPC, ECS, ACM.
+ecs web application module with submodules for VPC, ECS, ACM.
 
 #### Diagram
 
@@ -223,7 +223,7 @@ classDiagram
 State diagrams are used in computer science and control systems to describe
 the behavior of systems. These systems have a finite number of possible states
 and each state has a known set of transitions. These can be used to visualize
-workflows, process and outline programatic actions. Here we see some of the
+workflows, process and outline programmatic actions. Here we see some of the
 possible state transitions for a ticket in Jira.
 
 #### Diagram
@@ -326,9 +326,9 @@ gantt
 
 ### User Journey
 
-User Journey diagarms are intended to be high level of detail step by step
+User Journey diagrams are intended to be high level of detail step by step
 process charts of existing workflows which can reveal the areas of
-imporovement in future workflows.
+improvement in future workflows.
 
 #### Diagram
 ```mermaid
@@ -465,7 +465,7 @@ quick example here as this is the other type we will be focusing on below.
 ## Integrations
 
 None of this would do us much good without a handy way to work with these
-diagrams. Luckly for us the community has provided a number of [integrations](https://mermaid.js.org/ecosystem/integrations.html)
+diagrams. Luckily for us the community has provided a number of [integrations](https://mermaid.js.org/ecosystem/integrations.html)
 . The first one that caught my eye was github, specifically github markdown
 rendering supports Mermaid diagrams. This was enough industry buy-in to get
 me interested. Some further looking shows extensive support, Github, Gitlab,
@@ -483,7 +483,7 @@ clarify our work with quick diagrams.
 
 This is what I use most, it allows for rapid iteration of diagrams and the
 associated documentation in markdown format. To view local files I make use
-two browser plug-ins, the first reders markdown, the second adds Mermaid
+two browser plug-ins, the first readers markdown, the second adds Mermaid
 diagrams to that markdown. [GitLab Markdown Viewer](https://github.com/painyeph/GitLabMarkdownViewer)
 is a simple GitLab syntax markdown viewer. [Markdown Diagrams](https://github.com/marcozaccari/markdown-diagrams-browser-extension)
 extends markdown with the diagram support. Together they provide a solid base
@@ -507,7 +507,7 @@ diagrams.
 Native support in github README was *the* feature that made me think this
 would be a tool worth looking into. This means that all of our client facing
 modules that we deploy, all of the lambda functions that we package, scripts,
-tooling, ect. can benifit from diagrams with no extra effort. The following
+tooling, ect. can benefit from diagrams with no extra effort. The following
 screenshot is from a github rendered README.md file with nothing done other
 than add the block with the language of `mermaid`.
 
@@ -516,10 +516,11 @@ than add the block with the language of `mermaid`.
 ### Jira
 
 This one is rather speculative at the time of this writing. I have put in a
-request to have the add-on installed in Jira to allow for the display of
-rendered Mermaid diagrams. This could be a signifigant aid in communicating
-intended architectures, application or communications flows and outcomes to
-clients. The plugin proports to
+the request but we don't have any budget allocated to plugins just now. If you
+feel that this capability would help you in your work, please reach out to
+help me make the business case to get this added. I feel this could be a
+significant aid in communicating intended architectures, application or
+communications flows and outcomes to clients. The plugin purports to:
 
 > Automatically converts mermaid chart definitions into images that will be
 > uploaded in-place to Jira on your behalf.
@@ -530,7 +531,7 @@ clients. The plugin proports to
 
 ### Live editor
 
-This is the go-to for working up examples and active coloboration. While I
+This is the go-to for working up examples and active collaboration. While I
 like the local workflow for my documentation work when brainstorming this is
 the place to be. Live rendering of changes allows for rapid iteration of ideas
 and their representation.
@@ -552,10 +553,10 @@ unexpected changes or issues arise in the non-local render.
 
 ### Flow chart
 
-Flowcharts are extremely versitile and can be used to document infra or
+Flowcharts are extremely versatile and can be used to document infra or
 application architectures, workflows, organization processes. These are declared
 with the type `flowchart`. Flowcharts can
-have one of several orientations , top down (`TB`, `TD`), botton to top (`BT`
+have one of several orientations , top down (`TB`, `TD`), bottom to top (`BT`
 ), right to left (`RL`) and left to right (`LR`). This notation follow directly
 after the diagram type declaration. Following this we have nodes in the format
 of `id["Label/Description"]`. The `id` is the refernce we will use to draw
@@ -569,7 +570,7 @@ details please see [the docs](https://mermaid.js.org/syntax/flowchart.html).
 Here we will see a basic three tier web app as deployed in AWS from the high
 level. We also see a new concept, `subgraph` this is simply a bounded context.
 It is what draws the box around a set of components to indicate they are in
-the same conceptual space or in a distinct space from other componenets.
+the same conceptual space or in a distinct space from other components.
 Additionally we see a new shape for the DB node. A [good selection of shape
 options are listed in the docs](https://mermaid.js.org/syntax/flowchart.html#node-shapes)
 .
@@ -618,8 +619,8 @@ flowchart LR
 
 #### Workflow Example
 
-Here we see a basic workflow or descision tree, in this case it is a way to
-make descisions on terraform modules. Here we see some more shapes and a new
+Here we see a basic workflow or decision tree, in this case it is a way to
+make decisions on terraform modules. Here we see some more shapes and a new
 way to link nodes. We can draw more than one link in a line with the node
 arrow node arrow node syntax. Additionally we see nodes with text being
 defined inline with the links. 
@@ -721,8 +722,8 @@ flowchart TD
 #### Organization Example
 
 Let's now take a quick look at how we can capture organizational logic in a
-diagram. For this example we will look at escilation points in Elevate. We
-have links to subgrpahs, nested subgraphs and stand alone nodes. Also note the
+diagram. For this example we will look at escalation points in Elevate. We
+have links to subgraphs, nested subgraphs and stand alone nodes. Also note the
 bottom to top order and the ability to declare a direction in a subgraph as is
 shown in the `internship`. We also see a title added to this diagram, titles
 must be the first element in a diagram.
@@ -859,32 +860,32 @@ flowchart BT
 
 ### C4
 
-C4 is a diagram style inspired by UML, this was simplified and paterned on
-mulitiple layers of deeper diagrams. It also does away with UMLs proscriptive
-guidence on meaning, you can use whatever shapes and types of lines you would
-like with C4 as long as you are consistant. C4 has four layers of diagram,
-those are Context, Container, Component and Code. Context is the high level
-outline, it is non-technical, should make since to all stake holders and fixes
+C4 is a diagram style inspired by UML, this was simplified and patterned on
+multiple layers of deeper diagrams. It also does away with UMLs proscriptive
+guidance on meaning, you can use whatever shapes and types of lines you would
+like with C4 as long as you are consistent. C4 has four layers of diagram,
+these are Context, Container, Component and Code. Context is the high level
+outline, it is non-technical, should make sence to all stakeholders and fixes
 the scope and context of a single system. Container is the next level down,
 provides the high level technical detail, how your system communicates with
 other systems and can be thought of as a single deployable unit (terraform
 module). This is normally enough for most uses but if you want to go deeper
-the Component layer is for illistraiting the technical highlights and major
+the Component layer is for illustrating the technical highlights and major
 components of each container, followed by the Code layer which which zooms in
 to the layer of each element in a given Component layer component. These lower
-layers are often unnecicary and quickly grow oudaated as the project
+layers are often unnecessary and quickly grow outdated as the project
 progresses.
 
 I am particularly excited about the ability to add links to nodes in the
 diagrams, this allows for each component of a diagram to link to the
-assocaited lower level diagram as we will see in the following examples.
+associated lower level diagram as we will see in the following examples.
 
 #### Context
 
-This is again, the high level overview from a non-technical prospective. It
+This is again, the high level overview from a non-technical perspective. It
 provides context for the work as well as the scope. The major components here
 that we are likely to work with are users, external services, aws accounts,
-aws services, terraform modules as deployeable units of function. Another way
+aws services, terraform modules as deployable units of function. Another way
 to look at this would be as a single "Workload" in the AWS WAFR framework.
 
 `cmd + click` on the "Application" node will open a new tab for the
@@ -1009,7 +1010,7 @@ flowchart TD
 This is where we get into the body of the technical implementation, this level
 is where we show the major components of a single deployable unit. In terrafrom
 this would be the module level and can/should show the main services in use,
-the interactions eabled as well as the inputs/outputs.
+the interactions enabled as well as the inputs/outputs.
 
 
 ##### Diagram <div id="c4-container-diagram">
